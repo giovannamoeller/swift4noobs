@@ -9,6 +9,7 @@
 ## ROADMAP
 
 ### Configuração de Ambiente
+1. [Instalando o XCode](docs/ambiente/01-instalando-xcode.md)
 
 ### A Linguagem
 
