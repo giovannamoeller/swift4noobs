@@ -6,3 +6,5 @@ A má notícia é que você consegue aprender apenas a linguagem mas não coloca
 
 Caso você queira realmente ingressar no desenvolvimento iOS será necessário investir em uma máquina MacOS. Existem algumas soluções que podem funcionar a curto prazo, como o caso de alugar uma máquina na nuvem (Mac In Cloud) ou até mesmo tentar um Hackintosh, embora este último seja mais arriscado. 
 
+Atualmente, você também consegue construir um aplicativo através de um outro aplicativo fornecido pela Apple chamado de "Swift Playgrounds". Esse aplicativo está disponível para MacOS e iPadOS, sendo possível criar um aplicativo através de um iPad.
+
