@@ -40,7 +40,7 @@ Se você realizar uma divisão entre dois números inteiros, o resultado será u
 ```
 
 ### 2. Ordem das operações
-A ordem segue a mesma ordem da matemática: os parênteses possuem uma maior procedência, será executado primeiro. E então, operadores como divisão, multiplicação e módulo. Por fim, temos os outros operadores de soma e subtração.
+A ordem segue a mesma ordem da matemática: os parênteses possuem uma maior precedência, será executado primeiro. E então, operadores como divisão, multiplicação e módulo. Por fim, temos os outros operadores de soma e subtração.
 
 ```swift
 350 / 5 + 2 // resultado: 72
@@ -79,3 +79,5 @@ Esses operadores comparam duas condições e também retornam um valor booleano.
 1 < 2 // true
 !(1 < 2) // false
 ```
+
+Lembrando que os parênteses aqui também indicam uma maior precedência em relação a operação.
