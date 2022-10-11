@@ -14,6 +14,7 @@
 3. [Conhecendo o Playground](docs/ambiente/03-conhecendo-playgrounds.md)
 
 ### A Linguagem
+1. [Variáveis](docs/linguagem/01-variaveis.md)
 
 ## Como Contribuir
 
