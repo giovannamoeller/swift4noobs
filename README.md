@@ -15,6 +15,7 @@
 
 ### A Linguagem
 1. [Variáveis](docs/linguagem/01-variaveis.md)
+2. [Tipos e Operações](docs/linguagem/02-tipos-operacoes.md)
 
 ## Como Contribuir
 
