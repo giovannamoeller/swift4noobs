@@ -18,6 +18,38 @@ var decimalNumber = 8.5
 var isAdult = true
 ```
 
+### Entendendo melhor sobre Strings
+
+Strings são um conjunto de caracteres. No Swift, possuímos ambos os tipos: `Character` e `String`.
+```swift
+    let characterA: Character = "a" // se não especificar que é um character, o Swift entenderá que é uma string
+    let name: String = "Giovanna"
+```
+
+Para concatenar duas ou mais strings, podemos fazer de duas maneiras:
+
+```swift
+let name = "Giovanna"
+var message = "Hello, my name is " + name + "!"
+```
+
+Ou, de um modo mais fácil:
+
+```swift
+let name = "Giovanna"
+var message = "Hello, my name is \(name)!"
+```
+
+No Swift, o uso de strings precisa ser feito através de aspas duplas. Aspas simples não são válidas.
+
+### Typealias
+É uma funcionalidade interessante da linguagem em que você pode criar seu próprio tipo que é um alias de outro tipo. O que isso significa que você pode fazer é dar um nome mais útil ao seu tipo que descreve o que é, mas por baixo, é apenas outro tipo. Exemplo:
+
+```swift
+typealias Animal = String
+let myPet: Animal = "Meu cachorro"
+```
+
 ## Operações
 Quando você pega um ou mais dados e os transforma em outro, isso é conhecido como uma operação. Dentro da programação, temos diversos tipos de operações:
 
