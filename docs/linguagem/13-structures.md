@@ -47,7 +47,7 @@ Ou, podemos instanciar dessa maneira, declarando o tipo explicitamente e utiliza
 let person1: Person = .init(name: "Giovanna", surname: "Moeller", age: 21)
 ```
 
-Perceba que o `struct` não precisa de um inicializador, já é automático! Inicializador é um modo de forçar que todas as propriedades estejam setadas antes de utilizá-las. 
+Perceba que o `struct` não precisa de um inicializador, já é automático! Inicializador é um modo de forçar que todas as propriedades estejam setadas antes de utilizá-las. Mas se você quiser criar um para customizar algo, é totalmente possível.
 
 Para acessar as propriedades, usamos a sintaxe do ponto:
 
