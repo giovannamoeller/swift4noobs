@@ -83,3 +83,5 @@ protocol Vehicle: VehicleProperties {
 ```
 
 Veja que separamos as propriedades em um outro protocolo chamado `VehicleProperties`. Caso o nosso tipo (*Car*) conforme ao protocolo `Vehicle`, ele precisará adicionar as propriedades também, pois `Vehicle` herda de `VehicleProperties`.
+
+Uma classe pode apenas herdar de uma única classe. Lembra disso? Com protocolos isso não acontece! Uma classe, structure ou enumeration pode conformar vários protocolos ao mesmo tempo.
