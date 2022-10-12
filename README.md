@@ -24,6 +24,7 @@
 7. [Arrays](docs/linguagem/07-arrays.md)
 8. [Sets](docs/linguagem/08-sets.md)
 9. [Tuplas](docs/linguagem/09-tuplas.md)
+10. [Dicionários](docs/linguagem/10-dicionarios.md)
 
 ## Como Contribuir
 
