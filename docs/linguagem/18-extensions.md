@@ -38,7 +38,7 @@ Como a variável `value` é do tipo `Int`, então quer dizer que podemos acessar
 
 Extensões são muito utilizadas para melhor organização do código e separação de responsabilidades.
 
-Podemos estender `struct`, `class`, `protocolos`, `enums`, etc.
+Podemos estender `struct`, `class`, `protocol` e `enum`.
 Vamos ver sobre protocolos e enumerations a seguir.
 
 
