@@ -11,98 +11,98 @@ Porém, todo estudante é uma pessoa, certo? Afinal ele também possui proprieda
 Veja o exemplo abaixo:
 
 ```swift
-class Person {
-    let name: String
-    let surname: String
-    let age: Int
+class Pessoa {
+    let nome: String
+    let sobrenome: String
+    let idade: Int
 
-    init(name: String, surname: String, age: Int) {
-        self.name = name
-        self.surname = surname
-        self.age = age
+    init(nome: String, sobrenome: String, idade: Int) {
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = age
     }
 
-    func saySomething(sentence: String) {
-        print(sentence)
+    func falarAlgo(mensagem: String) {
+        print(mensagem)
     }
 }
 
-class Student {
-    let name: String
-    let surname: String
-    let age: Int
-    var grades: [Double] = [] // já estamos inicializando essa variável (um array vazio), portanto não precisamos passar essa informação no construtor (init)
+class Estudante {
+    let nome: String
+    let sobrenome: String
+    let idade: Int
+    var notas: [Double] = [] // já estamos inicializando essa variável (um array vazio), portanto não precisamos passar essa informação no construtor (init)
 
-    init(name: String, surname: String, age: Int) {
-        self.name = name
-        self.surname = surname
-        self.age = age
-        self.grades = grades
+    init(nome: String, sobrenome: String, idade: Int) {
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
+        self.notas = notas
     }
 
-    func printGrades() {
-        grades.forEach { grade in
-            print(grade)
+    func mostrarNotas() {
+        notas.forEach { nota in
+            print(nota)
         }
     }
 
-    func saySomething(sentence: String) {
-        print(sentence)
+    func falarAlgo(mensagem: String) {
+        print(mensagem)
     }
 }
 ```
 
 Se criarmos uma classe específica para pessoa e outra específica para estudante, há a redundância de informações. Muito código repetido, o que não entra em conformação com boas práticas. O ideal nesse caso é **herdar** informações.
 
-Como todo estudante é uma pessoa, podemos dizer que a classe `Student` herda de `Person`:
+Como todo estudante é uma pessoa, podemos dizer que a classe `Estudante` herda de `Pessoa`:
 
 ```swift
-class Person {
-    let name: String
-    let surname: String
-    let age: Int
+class Pessoa {
+    let nome: String
+    let sobrenome: String
+    let idade: Int
 
-    init(name: String, surname: String, age: Int) {
-        self.name = name
-        self.surname = surname
-        self.age = age
+    init(nome: String, sobrenome: String, idade: Int) {
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
     }
 
-    func saySomething(sentence: String) {
-        print(sentence)
+    func falarAlgo(mensagem: String) {
+        print(mensagem)
     }
 }
 
-class Student: Person {
-    var grades: [Double] = []
+class Estudante: Pessoa {
+    var notas: [Double] = []
 
-    func printGrades() {
-        grades.forEach { grade in
-            print(grade)
+    func mostrarNotas() {
+        notas.forEach { nota in
+            print(nota)
         }
     }
 }
 ```
 
-Perceba que agora, `Student` herda todas as informações de `Person` e mantém apenas as informações que são exclusivas.
+Perceba que agora, `Estudante` herda todas as informações de `Pessoa` e mantém apenas as informações que são exclusivas.
 
-Para instanciar um objeto `Student`, precisamos passar as informações que estão no construtor de `Person`:
-
-```swift
-let student = Student(name: "Giovanna", surname: "Moeller", age: 21)
-print(student.name) // "Giovanna"
-print(student.grades) // []
-```
-
-E obviamente, se criarmos uma instância de `Person` e tentar acessar a variável `grades`, isso não é possível, pois a variável `grades` só existe na classe `Student`:
+Para instanciar um objeto `Estudante`, precisamos passar as informações que estão no construtor de `Pessoa`:
 
 ```swift
-let student = Person(name: "Giovanna", surname: "Moeller", age: 21)
-print(student.name) // "Giovanna"
-print(student.grades) // erro!
+let estudante = Estudante(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
+print(estudante.nome) // "Giovanna"
+print(estudante.notas) // []
 ```
 
-Em termos técnicos, `Person` é uma superclasse (classe base), enquanto `Student` é uma subclasse (classe derivada).
+E obviamente, se criarmos uma instância de `Pessoa` e tentar acessar a variável `notas`, isso não é possível, pois a variável `notas` só existe na classe `Estudante`:
+
+```swift
+let estudante = Pessoa(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
+print(estudante.nome) // "Giovanna"
+print(estudante.notas) // erro!
+```
+
+Em termos técnicos, `Pessoa` é uma superclasse (classe base), enquanto `Estudante` é uma subclasse (classe derivada).
 
 **É importante ressaltar que uma classe pode herdar de apenas uma única classe** e que não há limite para a profundidade da subclasse, o que significa que você pode herdar de uma classe
 que também é uma subclasse.
@@ -111,16 +111,16 @@ que também é uma subclasse.
 
 A relação Aluno/Pessoa demonstra um conceito de ciência da computação conhecido como **polimorfismo**. Em resumo, o polimorfismo é a capacidade de uma linguagem de programação de tratar um objeto de maneira diferente com base no contexto.
 
-Um estudante é, obviamente, um estudante, mas também é uma pessoa. Como ele deriva de `Person`, você pode usar o objeto `student` (a variável que instancia `Student`) em qualquer lugar que usar um objeto `Person`.
+Um estudante é, obviamente, um estudante, mas também é uma pessoa. Como ele deriva de `Pessoa`, você pode usar o objeto `estudante` (a variável que instancia `Estudante`) em qualquer lugar que usar um objeto `Pessoa`.
 
 Veja um exemplo abaixo:
 
 ```swift
-func sayHello(to person: Person) {
-    print("Hello, \(person.name)!")
+func cumprimentar(_ pessoa: Pessoa) {
+    print("Olá, \(pessoa.nome)!")
 }
-let student = Student(name: "Giovanna", surname: "Moeller", age: 21)
-sayHello(to: student)
+let estudante = Estudante(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
+cumprimentar(to: estudante)
 ```
 
 Pelo fato de um estudante ser uma pessoa, o código acima é válido.
@@ -129,38 +129,38 @@ Pelo fato de um estudante ser uma pessoa, o código acima é válido.
 
 E se quisermos sobrescrever um método existente na classe pai para a classe filha?
 
-Vamos supor que queremos que o corpo da função `saySomething()` seja diferente na classe `Person` e na classe `Student`.
+Vamos supor que queremos que o corpo da função `falarAlgo()` seja diferente na classe `Pessoa` e na classe `Estudante`.
 
 Podemos usar uma palavra-chave chamada de `override`, que significa sobreescrita:
 
 ```swift
-class Person {
-    let name: String
-    let surname: String
-    let age: Int
+class Pessoa {
+    let nome: String
+    let sobrenome: String
+    let idade: Int
 
-    init(name: String, surname: String, age: Int) {
-        self.name = name
-        self.surname = surname
-        self.age = age
+    init(nome: String, sobrenome: String, idade: Int) {
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
     }
 
-    func saySomething(sentence: String) {
-        print(sentence)
+    func falarAlgo(mensagem: String) {
+        print(mensagem)
     }
 }
 
-class Student: Person {
-    var grades: [Double] = []
+class Estudante: Pessoa {
+    var notas: [Double] = []
 
-    func printGrades() {
-        grades.forEach { grade in
-            print(grade)
+    func mostrarNotas() {
+        notas.forEach { nota in
+            print(nota)
         }
     }
 
-    override func saySomething(sentence: String) {
-        print("Um estudante disse: \(sentence)")
+    override func falarAlgo(mensagem: String) {
+        print("Um estudante disse: \(mensagem)")
     }
 }
 ```
@@ -170,34 +170,34 @@ class Student: Person {
 Mas, se você quiser que ele ainda chame o método da classe pai e apenas depois execute algo definido pela subclasse, você pode chamar esse método através de uma palavra-chave denominada `super`:
 
 ```swift
-class Person {
-    let name: String
-    let surname: String
-    let age: Int
+class Pessoa {
+    let nome: String
+    let sobrenome: String
+    let idade: Int
 
-    init(name: String, surname: String, age: Int) {
-        self.name = name
-        self.surname = surname
-        self.age = age
+    init(nome: String, sobrenome: String, idade: Int) {
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
     }
 
-    func saySomething(sentence: String) {
-        print(sentence)
+    func falarAlgo(mensagem: String) {
+        print(mensagem)
     }
 }
 
-class Student: Person {
-    var grades: [Double] = []
+class Estudante: Pessoa {
+    var notas: [Double] = []
 
-    func printGrades() {
-        grades.forEach { grade in
-            print(grade)
+    func mostrarNotas() {
+        notas.forEach { nota in
+            print(nota)
         }
     }
 
-    override func saySomething(sentence: String) {
-        super.saySomething(sentence: sentence)
-        print("Um estudante disse: \(sentence)")
+    override func falarAlgo(mensagem: String) {
+        super.falarAlgo(mensagem: mensagem)
+        print("Um estudante disse: \(mensagem)")
     }
 }
 ```
@@ -205,8 +205,8 @@ class Student: Person {
 O resultado disso será:
 
 ```swift
-let student = Student(name: "Giovanna", surname: "Moeller", age: 21)
-student.saySomething(sentence: "Oie!")
+let estudante = Estudante(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
+estudante.falarAlgo(mensagem: "Oie!")
 /*
 Oie!
 Um estudante disse: Oie!
@@ -215,53 +215,53 @@ Um estudante disse: Oie!
 
 A palavra-chave `super` é semelhante a `self`, exceto que invocará o método na superclasse.
 
-Como você pode ter notado, aonde chamamos o `super` pode alterar o funcionamento do seu código. No exemplo abaixo, executará primeiro o "Um estudante disse: ", e depois executará o que está no método da classe pai.
+Como você pode ter notado, aonde chamamos o `super` pode alterar o funcionomento do seu código. No exemplo abaixo, executará primeiro o "Um estudante disse: ", e depois executará o que está no método da classe pai.
 
 ```swift
-class Student: Person {
-    var grades: [Double] = []
+class Estudante: Pessoa {
+    var notas: [Double] = []
 
-    func printGrades() {
-        grades.forEach { grade in
-            print(grade)
+    func mostrarNotas() {
+        notas.forEach { nota in
+            print(nota)
         }
     }
 
-    override func saySomething(sentence: String) {
-        print("Um estudante disse: \(sentence)")
-        super.saySomething(sentence: sentence)
+    override func falarAlgo(mensagem: String) {
+        print("Um estudante disse: \(mensagem)")
+        super.falarAlgo(mensagem: mensagem)
     }
 }
 ```
 
-Veja que na nossa classe `Student` não temos um inicializador, mas poderíamos criar um passando a propriedade `grades`:
+Veja que na nossa classe `Estudante` não temos um inicializador, mas poderíamos criar um passando a propriedade `notas`:
 
 ```swift
-class Student: Person {
-    var grades: [Double]
+class Estudante: Pessoa {
+    var notas: [Double]
     
-    init(grades: [Double]) {
-        self.grades = grades
+    init(notas: [Double]) {
+        self.notas = notas
     }
 }
 ```
 
-O código acima causará um erro, porque é como se estivéssemos sobrescrevendo o `init` do `Person()`, então como obter as propriedades `name`, `surname` e `age`, que são necessárias?
+O código acima causará um erro, porque é como se estivéssemos sobrescrevendo o `init` do `Pessoa()`, então como obter as propriedades `nome`, `sobrenome` e `idade`, que são necessárias?
 
 ```swift
-class Student: Person {
-    var grades: [Double]
+class Estudante: Pessoa {
+    var notas: [Double]
     
-    init(name: String, surname: String, age: Int, grades: [Double]) {
-        self.grades = grades
-        super.init(name: name, surname: surname, age: age)
+    init(nome: String, sobrenome: String, idade: Int, notas: [Double]) {
+        self.notas = notas
+        super.init(nome: nome, sobrenome: sobrenome, idade: idade)
     }
 }
 
-let student = Student(name: "Giovanna", surname: "Moeller", age: 21, grades: [8.0, 9.5, 8.8, 10.0, 9.3])
+let estudante = Estudante(nome: "Giovanna", sobrenome: "Moeller", idade: 21, notas: [8.0, 9.5, 8.8, 10.0, 9.3])
 ```
 
-Podemos chamar o construtor de `Person` usando o `super.init()` e passando as informações necessárias.
+Podemos chamar o construtor de `Pessoa` usando o `super.init()` e passando as informações necessárias.
 
 **O `super.init()` deve ser chamado após você inicializar todas as suas variáveis ​​de instância.**
 
@@ -270,9 +270,9 @@ Podemos chamar o construtor de `Person` usando o `super.init()` e passando as in
 Para prevenir que uma classe seja herdada, utilizamos a palavra-chave `final`, veja o exemplo abaixo:
 
 ```swift
-final class Person {
+final class Pessoa {
 }
 
-class Student: Person { // erro! A classe Person não pode ser herdada
+class Estudante: Pessoa { // erro! A classe Pessoa não pode ser herdada
 }
 ```

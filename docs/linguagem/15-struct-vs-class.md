@@ -12,26 +12,26 @@ Para entender isso, veja o código abaixo:
 
 ```swift
 struct Pessoa {
-  var name: String
-  var surname: String
-  var age: Int
+  var nome: String
+  var sobrenome: String
+  var idade: Int
 }
-var pessoa1 = Pessoa(name: "John", surname: "Doe", age: 34)
+var pessoa1 = Pessoa(nome: "John", sobrenome: "Doe", idade: 34)
 var pessoa2 = pessoa1
-pessoa1.name = "Gabriel"
-print(pessoa1.name) // Gabriel
-print(pessoa2.name) // John
+pessoa1.nome = "Gabriel"
+print(pessoa1.nome) // Gabriel
+print(pessoa2.nome) // John
 ```
 
-Perceba que igualamos `pessoa2` a `pessoa1` e então trocamos o valor da propriedade `name` em `pessoa1`. Essa mudança aconteceu **apenas** em `pessoa1`, e não em `pessoa2`.
+Perceba que igualamos `pessoa2` a `pessoa1` e então trocamos o valor da propriedade `nome` em `pessoa1`. Essa mudança aconteceu **apenas** em `pessoa1`, e não em `pessoa2`.
 
 Agora, veja esse exemplo:
 
 ```swift
 class Pessoa {
-  var name: String
-  var surname: String
-  var age: Int
+  var nome: String
+  var sobrenome: String
+  var idade: Int
 
   init(nome: String, sobrenome: String, idade: Int) {
     self.nome = nome
@@ -39,11 +39,11 @@ class Pessoa {
     self.idade = idade
   }
 }
-var pessoa1 = Pessoa(name: "John", surname: "Doe", age: 34)
+var pessoa1 = Pessoa(nome: "John", sobrenome: "Doe", age: 34)
 var pessoa2 = pessoa1
-pessoa1.name = "Gabriel"
-print(pessoa1.name) // Gabriel
-print(pessoa2.name) // Gabriel
+pessoa1.nome = "Gabriel"
+print(pessoa1.nome) // Gabriel
+print(pessoa2.nome) // Gabriel
 ```
 
 Veja só: agora, mesmo alterando apenas o nome da variável `pessoa1`, a mudança também refletiu na variável `pessoa2`, fazendo com que ambos tenham o nome "Gabriel".
@@ -110,7 +110,7 @@ class Pessoa {
   var nome: String
   // Outras propriedades e métodos...
 }
-let pessoa1 = Pessoanome: "John", sobrenome: "Doe", idade: 34)
+let pessoa1 = Pessoa(nome: "John", sobrenome: "Doe", idade: 34)
 pessoa1.nome = "Gabriel" // A atribuição ocorre sem problemas
 ```
 

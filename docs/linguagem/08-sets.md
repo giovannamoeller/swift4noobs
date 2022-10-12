@@ -11,11 +11,11 @@ Porém, as diferenças entre arrays e sets são:
 Para criar um Set, precisamos declarar especificamente seu tipo, pois se deixarmos o Swift detectar automaticamente, ele entende que é um Array.
 
 ```swift
-let setOne: Set<Int> = []
-let someArray = [1, 2, 3, 4] // Array
-let explicitSet: Set<Int> = [1, 2, 3, 4]
+let primeiroSet: Set<Int> = []
+let array = [1, 2, 3, 4] // Array
+let setExplicito: Set<Int> = [1, 2, 3, 4]
 // ou também podemos declarar assim:
-let someSet = Set([1, 2, 3, 4])
+let algumSet = Set([1, 2, 3, 4])
 ```
 
 Se criarmos um Set com elementos repetidos, ele irá excluir a segunda vez (ou mais vezes) que esse elemento aparece, deixando em apenas uma vez:

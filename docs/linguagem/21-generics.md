@@ -51,19 +51,19 @@ Por isso que conseguimos passar qualquer valor agora para a função, independen
 Podemos também criar uma classe genérica que pode mudar o tipo de dado que recebe. Veja o exemplo abaixo:
 
 ```swift
-class Information<T> {
-  var data: T
-  init (data: T) {
-    self.data = data
+class Informacao<T> {
+  var dado: T
+  init (dado: T) {
+    self.dado = dado
   }
-  func getData() -> T {
-    return self.data
+  func retornaDado() -> T {
+    return self.dado
   }
 }
 
-var number = Information<Int>(data: 6)
-print(number.getData()) // 6, um valor do tipo Int
+var numero = Informacao<Int>(dado: 6)
+print(numero.retornaDado()) // 6, um valor do tipo Int
 
-var string = Information<String>(data: "Hello, World!")
-print(string.getData()) // Hello World, um valor do tipo String
+var string = Informacao<String>(dado: "Hello, World!")
+print(string.retornaDado()) // Hello World, um valor do tipo String
 ```
