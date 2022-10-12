@@ -7,9 +7,9 @@ A condição, portanto, retorna um valor booleano: true/false. É nesse momento 
 ### If / else
 Se uma condição for verdadeira, executará uma instrução. Se não, executará outra instrução. Veja um exemplo abaixo:
 ```swift
-let age = 21
+let idade = 21
 
-if age >= 18 {
+if idade >= 18 {
     print("Você pode dirigir!")
 } else {
     print("Você não pode dirigir!")
@@ -21,12 +21,12 @@ if age >= 18 {
 O `else if` cria uma outra condição a ser testada. Veja um exemplo abaixo:
 
 ```swift
-let number1 = 20
-let number2 = 30
+let numero1 = 20
+let numero2 = 30
 
-if number1 > number2 {
+if numero1 > numero2 {
     print("Número 1 é maior que número 2")
-} else if number1 < number2 {
+} else if numero1 < numero2 {
     print("Número 2 é maior que número 1")
 } else {
     print("Número 1 e número 2 são iguais")
@@ -37,9 +37,9 @@ if number1 > number2 {
 
 O operador ternário é um modo mais curto e mais simples de executar um `if-else`. Veja um exemplo abaixo:
 ```swift
-let age = 20
+let idade = 20
 
-age >= 18 ? print("Pode dirigir") : print("Não pode dirigir")
+idade >= 18 ? print("Pode dirigir") : print("Não pode dirigir")
 ```
 
 ## Loops
