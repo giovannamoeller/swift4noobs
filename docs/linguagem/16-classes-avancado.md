@@ -165,6 +165,8 @@ class Student: Person {
 }
 ```
 
+## Super
+
 Mas, se você quiser que ele ainda chame o método da classe pai e apenas depois execute algo definido pela subclasse, você pode chamar esse método através de uma palavra-chave denominada `super`:
 
 ```swift
@@ -232,11 +234,36 @@ class Student: Person {
 }
 ```
 
-## Super
+Veja que na nossa classe `Student` não temos um inicializador, mas poderíamos criar um passando a propriedade `grades`:
 
+```swift
+class Student: Person {
+    var grades: [Double]
+    
+    init(grades: [Double]) {
+        self.grades = grades
+    }
+}
+```
 
+O código acima causará um erro, porque é como se estivéssemos sobrescrevendo o `init` do `Person()`, então como obter as propriedades `name`, `surname` e `age`, que são necessárias?
 
-### Override
+```swift
+class Student: Person {
+    var grades: [Double]
+    
+    init(name: String, surname: String, age: Int, grades: [Double]) {
+        self.grades = grades
+        super.init(name: name, surname: surname, age: age)
+    }
+}
+
+let student = Student(name: "Giovanna", surname: "Moeller", age: 21, grades: [8.0, 9.5, 8.8, 10.0, 9.3])
+```
+
+Podemos chamar o construtor de `Person` usando o `super.init()` e passando as informações necessárias.
+
+**O `super.init()` deve ser chamado após você inicializar todas as suas variáveis ​​de instância.**
 
 ## Prevenir herança
 
