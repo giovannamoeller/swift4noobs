@@ -30,6 +30,13 @@
 13. [Structures](docs/linguagem/13-structures.md)
 14. [Classes](docs/linguagem/14-classes.md)
 15. [Struct x Class](docs/linguagem/15-struct-vs-class.md)
+16. [Mais funcionalidades sobre classes](docs/linguagem/16-classes-avancado.md)
+17. [Propriedades](docs/linguagem/17-properties.md)
+18. [Extensões](docs/linguagem/18-extensions.md)
+19. [Enumerations](docs/linguagem/19-enumerations.md)
+20. [Protocolos](docs/linguagem/20-protocolos.md)
+21. [Tipos Genéricos](docs/linguagem/21-generics.md)
+22. [E agora, pra onde ir?](docs/linguagem/22-next-steps.md)
 
 ## Como Contribuir
 
