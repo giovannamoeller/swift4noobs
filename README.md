@@ -9,12 +9,12 @@
 ## ROADMAP
 
 ### Configuração de Ambiente
-0. [Sintaxe do Swift](docs/linguagem/00-sintaxe.md)
 1. [Instalando o XCode](docs/ambiente/01-instalando-xcode.md)
 2. [Não tenho um MacOS, consigo aprender Swift?](docs/ambiente/02-estudar-swift-sem-macos.md)
 3. [Conhecendo o Playground](docs/ambiente/03-conhecendo-playgrounds.md)
 
 ### A Linguagem
+0. [Sintaxe do Swift](docs/linguagem/00-sintaxe.md)
 1. [Variáveis](docs/linguagem/01-variaveis.md)
 2. [Tipos e Operações](docs/linguagem/02-tipos-operacoes.md)
 3. [Controle de fluxo básico](docs/linguagem/03-controle-fluxo-basico.md)
