@@ -22,6 +22,7 @@
 5. [Funções](docs/linguagem/05-funcoes.md)
 6. [Opcionais](docs/linguagem/06-opcionais.md)
 7. [Arrays](docs/linguagem/07-arrays.md)
+8. [Sets](docs/linguagem/08-sets.md)
 
 ## Como Contribuir
 
