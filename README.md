@@ -23,6 +23,7 @@
 6. [Opcionais](docs/linguagem/06-opcionais.md)
 7. [Arrays](docs/linguagem/07-arrays.md)
 8. [Sets](docs/linguagem/08-sets.md)
+9. [Tuplas](docs/linguagem/09-tuplas.md)
 
 ## Como Contribuir
 
