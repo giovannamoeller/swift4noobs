@@ -17,6 +17,7 @@
 1. [Variáveis](docs/linguagem/01-variaveis.md)
 2. [Tipos e Operações](docs/linguagem/02-tipos-operacoes.md)
 3. [Controle de fluxo básico](docs/linguagem/03-controle-fluxo-basico.md)
+4. [Controle de fluxo avançado](docs/linguagem/03-controle-fluxo-avancado.md)
 
 ## Como Contribuir
 
