@@ -11,18 +11,18 @@ Existem algumas propriedades que são diferentes de outras, vamos entender melho
 Você já está bem familiar com esse conceito porque uma *stored property* é uma propriedade comum que possui o seu tipo de dado:
 
 ```swift
-struct Person {
-    var name: String
-    var surname: String
-    var age: Int
+struct Pessoa {
+    var nome: String
+    var sobrenome: String
+    var idade: Int
 }
 ```
 
 Podemos também atribuir valores a essas propriedades depois de instanciadas:
 
 ```swift
-var person = Person(name: "Giovanna", surname: "Moeller", age: 21)
-person.age = 22
+var pessoa = Pessoa(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
+pessoa.idade = 22
 ```
 
 ### Valores padrões (default)
@@ -30,12 +30,12 @@ person.age = 22
 Podemos oferecer valores chamados de `default` para as propriedades. Nesse caso, elas não precisam ser passadas pelo inicializador, porque já possuem um valor padrão:
 
 ```swift
-struct Person {
-    var name: String = "Giovanna"
-    var surname: String = "Moeller"
-    var age: Int = 20
+struct Pessoa {
+    var nome: String = "Giovanna"
+    var sobrenome: String = "Moeller"
+    var idade: Int = 20
 }
-var person = Person()
+var pessoa = Pessoa()
 ```
 
 ## Computed Properties (propriedades calculadas)
@@ -49,20 +49,20 @@ Propriedades computadas também devem incluir um tipo porque o compilador precis
 Veja um exemplo abaixo de propriedade computada:
 
 ```swift
-struct Rectangle {
-    var width: Double
-    var height: Double
+struct Retangulo {
+    var largura: Double
+    var altura: Double
 
     var area: Double {
-        return width * height
+        return largura * altura
     }
 }
 
-var rectangle = Rectangle(width: 50.0, height: 70.0)
-print(rectangle.area) // 3500
-rectangle.width = 60.0
-print(rectangle.area) // 4200
-// rectangle.area = 5000 -> não é permitido setar uma propriedade computada, apenas ler o seu valor (get-only)
+var retangulo = Retangulo(largura: 50.0, altura: 70.0)
+print(retangulo.area) // 3500
+retangulo.largura = 60.0
+print(retangulo.area) // 4200
+// retangulo.area = 5000 -> não é permitido setar uma propriedade computada, apenas ler o seu valor (get-only)
 ```
 
 ## Getter and Setter
@@ -74,45 +74,44 @@ Ele possui um bloco de código para calcular o valor da propriedade, chamado de 
 Também é possível criar uma propriedade computada de leitura/escrita com dois blocos de código: um *getter* e um *setter*.
 
 Este *setter* funciona de forma diferente do que você poderia esperar.
-Como a propriedade computada não tem lugar para armazenar um valor, o setter geralmente define uma ou
-mais propriedades armazenadas (*stored properties*):
+Como a propriedade computada não tem lugar para armazenar um valor, o setter geralmente define uma ou mais propriedades armazenadas (*stored properties*):
 
 ```swift
-class Weight {
-    var kilograms: Float = 0.0
-    var pounds: Float {
+class Peso {
+    var kilogramas: Float = 0.0
+    var libras: Float {
         get {
-            return kilograms * 2.205
+            return kilogramas * 2.205
         }
-        set(newWeight) {
-            kilograms = newWeight / 2.205
+        set(novoPeso) {
+            kilogramas = novoPeso / 2.205
         }
         /*
         set {
-            kilograms = newValue / 2.205
+            kilogramas = newValue / 2.205
         }
         */
     }
 }
 
-let weight = Weight()
-weight.kilograms = 100
-print(weight.pounds) // método get é invocado - 220.5
-weight.pounds = 315 // método set é invocado
-print(weight.kilograms) // 142.9
+let peso = Peso()
+peso.kilogramas = 100
+print(peso.libras) // método get é invocado - 220.5
+peso.libras = 315 // método set é invocado
+print(peso.kilogramas) // 142.9
 ```
 
-Veja que no `set` passamos um parâmetro chamado `newWeight`. Mas se não quiser passar um parâmetro, você ainda pode usar o `newValue` que automaticamente pega o novo valor, é uma funcionalidade do Swift pra você não se preocupar em passar os parâmetros:
+Veja que no `set` passamos um parâmetro chamado `novoPeso`. Mas se não quiser passar um parâmetro, você ainda pode usar o `newValue` que automaticamente pega o novo valor, é uma funcionalidade do Swift pra você não se preocupar em passar os parâmetros:
 
 ```swift
-class Weight {
-    var kilograms: Float = 0.0
-    var pounds: Float {
+class Peso {
+    var kilogramas: Float = 0.0
+    var libras: Float {
         get {
-            return kilograms * 2.205
+            return kilogramas * 2.205
         }
         set {
-            kilograms = newValue / 2.205
+            kilogramas = newValue / 2.205
         }
     }
 }
@@ -131,8 +130,8 @@ struct Network {
     static let APIUrl = "https://...."
 }
 
-let APIRequest = Network()
-// não conseguimos acesso a propriedade APIUrl pela instância APIRequest, então precisamos acessar dessa maneira:
+let requisicaoAPI = Network()
+// não conseguimos acesso a propriedade APIUrl pela instância requisicaoAPI, então precisamos acessar dessa maneira:
 let APIUrl = Network.APIUrl
 ```
 
@@ -144,22 +143,22 @@ Um observador `willSet` é chamado quando uma propriedade **está prestes a ser 
 ### willSet
 
 ```swift
-struct Rectangle {
-    var width: Double {
+struct Retangulo {
+    var largura: Double {
         willSet { // se quiser usar um willSet(valorNovo), ou qualquer outro nome pra referenciar a variável nova, sem problemas!
-            print("Width acabou de ser alterada. Seu novo valor é \(newValue)")
+            print("Largura acabou de ser alterada. Seu novo valor é \(newValue)")
         }
     }
-    var height: Double
+    var altura: Double
 
     var area: Double {
-        return width * height
+        return largura * altura
     }
 }
 
-var rectangle = Rectangle(width: 50.0, height: 60.0)
-rectangle.width = 60.0
-// Width acabou de ser alterada. Seu novo valor é 60.0
+var retangulo = Retangulo(largura: 50.0, altura: 60.0)
+retangulo.largura = 60.0
+// Largura acabou de ser alterada. Seu novo valor é 60.0
 ```
 
 Da mesma maneira que o `set` não precisa tomar como parâmetro um valor, o `willSet` e `didSet` também não. O `newValue` já está incluso e definido pela própria linguagem, ele pega o novo valor para que a propriedade foi alterada.
@@ -167,22 +166,22 @@ Da mesma maneira que o `set` não precisa tomar como parâmetro um valor, o `wil
 ### didSet
 
 ```swift
-struct Rectangle {
-    var width: Double {
+struct Retangulo {
+    var largura: Double {
         didSet {
-            print("Width acabou de ser alterada. Seu valor antigo era \(oldValue)")
+            print("Largura acabou de ser alterada. Seu valor antigo era \(oldValue)")
         }
     }
-    var height: Double
+    var altura: Double
 
     var area: Double {
-        return width * height
+        return largura * altura
     }
 }
 
-var rectangle = Rectangle(width: 50.0, height: 60.0)
-rectangle.width = 60.0
-// Width acabou de ser alterada. Seu valor antigo era 50.0
+var retangulo = Retangulo(largura: 50.0, altura: 60.0)
+retangulo.largura = 60.0
+// Largura acabou de ser alterada. Seu valor antigo era 50.0
 ```
 
 O parâmetro `oldValue` em `didSet` é referente ao **valor antigo** da propriedade.
