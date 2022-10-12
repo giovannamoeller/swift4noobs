@@ -22,7 +22,7 @@ Intervalo é um tipo de dado que permite a representação de uma sequência de 
 Primeiramente, temos o que chamamos de sequencia fechada, que você pode representar como:
 
 ```swift
-    let closedRange = 0...5
+    let intervaloFechado = 0...5
 ```
 
 A sequencia fechada inclui o primeiro e último valor também. Portanto, essa sequencia representa os valores 0, 1, 2, 3, 4 e 5 no caso acima.
@@ -30,7 +30,7 @@ A sequencia fechada inclui o primeiro e último valor também. Portanto, essa se
 Também temos a sequencia meio-aberta, que podemos representar como:
 
 ```swift
-    let halfOpenRange = 0..<5
+    let intervaloMeioAberto = 0..<5
 ```
 
 A sequencia meio-aberta inclui o primeiro , mas não o último valor. Portanto, essa sequencia representa os valores 0, 1, 2, 3 e 4 no caso acima.
@@ -43,11 +43,11 @@ Agora, voltando para o `for`, no código acima, o resultado será o print de 0 a
 
 ```swift
 let count = 10
-var sum = 0
+var soma = 0
 for i in 1...count {
-sum += i
+soma += i
 }
-print(sum) // 55
+print(soma) // 55
 ```
 
 ## Condicionais
@@ -59,8 +59,8 @@ No material anterior, vimos sobre `if-else if-else`, além do operador ternário
 O comando switch executa um código diferente dependendo do valor de uma variável ou constante. Veja um exemplo abaixo:
 
 ```swift
-let number = 10
-switch number {
+let numero = 10
+switch numero {
     case 0:
         print("Zero")
     default:
@@ -73,8 +73,8 @@ No `switch`, o comando `default` executa sempre quando os casos não forem satis
 Se você não quer que nada aconteça quando executar o `default`, você pode colocar o comando `break`, veja abaixo:
 
 ```swift
-let number = 10
-switch number {
+let numero = 10
+switch numero {
     case 0:
         print("Zero")
     default: break
@@ -84,8 +84,8 @@ switch number {
 Podemos também brincar com intervalos, como eu mencionei anteriormente:
 
 ```swift
-let number = 10
-switch number {
+let numero = 10
+switch numero {
     case 0..<10:
         print("Entre 0 e 9")
     case 10..<20:
@@ -112,23 +112,23 @@ Lembrando que quando temos mais de um caso verdadeiro, o primeiro deles será ex
 Uma outra funcionalidade muito interessante desse comando `switch` é o fato de podermos criar condicionais dentro de cada caso. Veja um exemplo abaixo:
 
 ```swift
-let number = 4
-switch number {
+let numero = 4
+switch numero {
     case let x where x % 2 == 0: print("Número par")
     default: print("Número ímpar")
 }
 ```
 
-O caso só vai ser executado se certa condição for verdadeira. A parte do `let` faz com que haja uma ligação de uma nova variável com a variável `number`, que é a variável em que estamos trabalhando no `switch`, enquanto a parte do `where` exibe uma condição.
+O caso só vai ser executado se certa condição for verdadeira. A parte do `let` faz com que haja uma ligação de uma nova variável com a variável `numero`, que é a variável em que estamos trabalhando no `switch`, enquanto a parte do `where` exibe uma condição.
 
 Essa funcionalidade é chamada de **pattern matching**, ou combinação de padrões.
 
 Porém, veja que nesse caso não estamos usando a variável `x` em momento algum, portanto podemos fazer de uma maneira diferente:
 
 ```swift
-let number = 4
-switch number {
-    case let _ where number % 2 == 0: print("Número par")
+let numero = 4
+switch numero {
+    case let _ where numero % 2 == 0: print("Número par")
     default: print("Número ímpar")
 }
 ```
@@ -138,7 +138,7 @@ switch number {
 Agora que você já entendeu como usar intervalo de números, uma funcionalidade que você possa querer é gerar um número aleatório. Para isso, usamos intervalo:
 
 ```swift
-let randomNumber = Int.random(in: 1...10)
+let numeroAleatorio = Int.random(in: 1...10)
 ```
 
 Nesse caso, vamos gerar um número aleatório entre 1 e 10, incluindo o 10.
