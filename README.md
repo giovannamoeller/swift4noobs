@@ -20,6 +20,7 @@
 3. [Controle de fluxo básico](docs/linguagem/03-controle-fluxo-basico.md)
 4. [Controle de fluxo avançado](docs/linguagem/04-controle-fluxo-avancado.md)
 5. [Funções](docs/linguagem/05-funcoes.md)
+6. [Opcionais](docs/linguagem/06-opcionais.md)
 
 ## Como Contribuir
 
