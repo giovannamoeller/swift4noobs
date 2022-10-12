@@ -13,9 +13,9 @@ Vamos ver alguns métodos abaixo. Todos utilizam o conceito de `closure`, passan
 O método `forEach` realiza um loop entre os elementos de uma coleção e perfrorma alguma operação entre eles:
 
 ```swift
-let values = [1, 4, 8, 10, 15, 16]
-values.forEach { number in
-    print(number)
+let valores = [1, 4, 8, 10, 15, 16]
+valores.forEach { valor in
+    print(valor)
 }
 ```
 
@@ -24,8 +24,8 @@ Veja que a função `forEach` recebe uma `closure` como argumento, uma função 
 E tudo o que você viu no material anterior é aplicado aqui. Veja o código abaixo, em que omitimos a lista de parâmetros:
 
 ```swift
-let values = [1, 4, 8, 10, 15, 16]
-values.forEach {
+let valores = [1, 4, 8, 10, 15, 16]
+valores.forEach {
     print($0)
 }
 ```
@@ -35,24 +35,24 @@ values.forEach {
 Esse método é responsável por filtrar certos elementos de uma coleção:
 
 ```swift
-let values = [1, 4, 8, 10, 15, 16]
-let valuesHigherThan10 = values.filter { number in
-    return number > 10
+let valores = [1, 4, 8, 10, 15, 16]
+let valoresMaiorQue10 = valores.filter { valor in
+    return valor > 10
 } // [15, 16]
 ```
 
 Nesse caso, estamos filtrando os elementos maior que 10.
 
-Porém, perceba que esse método não atua diretamente no array `values`. Ele retorna um outro array e você pode atribuí-lo à uma nova variável.
+Porém, perceba que esse método não atua diretamente no array `valores`. Ele retorna um outro array e você pode atribuí-lo à uma nova variável.
 
 ## 3. First
 
 Esse método pega apenas o primeiro elemento que satisfaz uma determinada condição. Então seguindo o mesmo exemplo acima:
 
 ```swift
-let values = [1, 4, 8, 10, 15, 16]
-let firstValueHigherThan10 = values.first { number in
-    return number > 10
+let valores = [1, 4, 8, 10, 15, 16]
+let primeiroValorMaiorQue10 = valores.first { valor in
+    return valor > 10
 } // 15
 ```
 
@@ -61,11 +61,11 @@ let firstValueHigherThan10 = values.first { number in
 O método `map` executa determinda função em cada elemento do array e retorna um novo array com essas modificações:
 
 ```swift
-let values = [1, 4, 8, 10, 15, 16]
-let doubledValues = values.map { number in
-    return number * 2
+let valores = [1, 4, 8, 10, 15, 16]
+let valoresDobrados = valores.map { valor in
+    return valor * 2
 }
-print(doubledValues) // [2, 8, 16, 20, 30, 32]
+print(valoresDobrados) // [2, 8, 16, 20, 30, 32]
 ```
 
 Obs: perceba que em todos esses métodos estamos usando a sintaxe de *trailing closure*.
@@ -76,10 +76,10 @@ Antes de entendermos o `compactMap`, vamos ver mais um exemplo de `map` abaixo:
 
 ```swift
 let strings = ["0", "10", "Giovanna", "40"]
-let numbers = strings.map { string in
+let valores = strings.map { string in
     return Int(string)
 }
-print(numbers) // [Optional(0), Optional(10), nil, Optional(40)]
+print(valores) // [Optional(0), Optional(10), nil, Optional(40)]
 ```
 
 Veja que estamos retornando um array de números inteiros a partir da conversão. Mas, não podemos garantir que toda string seja de fato um número. É impossível converter "Giovanna" para um inteiro, por isso há o retorno em forma de opcional. Inclusive, temos até um `nil` ali no meio.
@@ -88,10 +88,10 @@ O que o `compactMap` faz é retornar o array com valores certos, sem usar opcion
 
 ```swift
 let strings = ["0", "10", "Giovanna", "40"]
-let numbers = strings.compactMap { string in
+let valores = strings.compactMap { string in
     return Int(string)
 }
-print(numbers) // [0, 10, 40]
+print(valores) // [0, 10, 40]
 ```
 
 Existem diversos outros métodos que iteram sobre coleções com o uso de `closures`, isso é uma prática muito comum!
