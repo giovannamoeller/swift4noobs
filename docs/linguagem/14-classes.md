@@ -3,22 +3,22 @@
 Como já havia comentado anteriormente, classes são extremamente parecidas com structures. Seguindo o mesmo exemplo anterior, vamos criar uma classe que representa uma pessoa, com suas propriedades e métodos:
 
 ```swift
-class Person {
-    let name: String
-    let surname: String
-    let age: Int
+class Pessoa {
+    let nome: String
+    let sobrenome: String
+    let idade: Int
 
-    init(name: String, surname: String, age: Int) {
-        self.name = name
-        self.surname = surname
-        self.age = age
+    init(nome: String, sobrenome: String, idade: Int) {
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
     }
 
-    func saySomething(sentence: String) {
-        print(sentence)
+    func falarAlgo(mensagem: String) {
+        print(mensagem)
     }
 }
-let person1 = Person(name: "Giovanna", surname: "Moeller", age: 21)
+let pessoa1 = Pessoa(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
 ```
 
 Perceba que agora criamos um inicializador, pois em classes eles são necessários.
