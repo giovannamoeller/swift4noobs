@@ -21,6 +21,7 @@
 4. [Controle de fluxo avançado](docs/linguagem/04-controle-fluxo-avancado.md)
 5. [Funções](docs/linguagem/05-funcoes.md)
 6. [Opcionais](docs/linguagem/06-opcionais.md)
+7. [Arrays](docs/linguagem/07-arrays.md)
 
 ## Como Contribuir
 
