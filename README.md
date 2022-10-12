@@ -25,6 +25,8 @@
 8. [Sets](docs/linguagem/08-sets.md)
 9. [Tuplas](docs/linguagem/09-tuplas.md)
 10. [Dicionários](docs/linguagem/10-dicionarios.md)
+11. [Closures](docs/linguagem/11-closures.md)
+12. [Iterando sobre coleções com closures](docs/linguagem/12-iterando-colecoes.md)
 
 ## Como Contribuir
 
