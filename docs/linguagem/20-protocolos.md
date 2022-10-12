@@ -13,9 +13,9 @@ Um fato curioso é que o Swift é a primeira linguagem orientada a protocolos e 
 Vamos definir um procolo abaixo:
 
 ```swift
-protocol Vehicle {
-    func accelerate()
-    func stop()
+protocol Veiculo {
+    func acelerar()
+    func parar()
 }
 ```
 
@@ -24,17 +24,17 @@ O que está acontecendo acima é simples: um veículo pode acelerar e parar.
 Agora, vamos criar uma `struct` que representa um carro. Um carro é um veículo, então ele precisa implementar os métodos de acelerar e parar:
 
 ```swift
-class Car: Vehicle {
-    func accelerate() {
+class Carro: Veiculo {
+    func acelerar() {
         print("Carro está acelerando!")
     }
-    func stop() {
+    func parar() {
         print("Carro está parado.")
     }
 }
 ```
 
-Veja só: nossa classe `Car` está em conformidade com o protocolo `Vehicle`. Caso a gente especifique que precisa estar em conformidade mas não implementa os métodos necessários, causará um erro na nossa aplicação: "Type 'Car' does not conform to protocol 'Vehicle'".
+Veja só: nossa classe `Car` está em conformidade com o protocolo `Veiculo`. Caso a gente especifique que precisa estar em conformidade mas não implementa os métodos necessários, causará um erro na nossa aplicação: "Type 'Car' does not conform to protocol 'Veiculo'".
 
 Um protocolo pode ser adotado por uma classe, structure, enumeration ou até mesmo uma extension.
 
@@ -43,19 +43,19 @@ Os métodos dentro do protocolo precisam definir bem o que será passado de par�
 Veja mais um exemplo abaixo:
 
 ```swift
-enum Direction {
-    case left
-    case right
+enum Direcao {
+    case esquerda
+    case direita
 }
 
-protocol Vehicle {
-    func accelerate()
-    func stop()
-    func turn(_ direction: Direction)
-    func vehicleDescription() -> String
+protocol Veiculo {
+    func acelerar()
+    func parar()
+    func virar(_ direcao: Direcao)
+    func descricaoDoVeiculo() -> String
 
-    var weight: Int { get }
-    var name: String { get set }
+    var peso: Int { get }
+    var nome: String { get set }
 }
 ```
 
@@ -64,24 +64,24 @@ Quando definimos propriedades em protocolos, precisamos especificar se elas são
 Uma outra funcionalidade interessante é que também há herança em protocolos. Veja o exemplo abaixo:
 
 ```swift
-enum Direction {
-    case left
-    case right
+enum Direcao {
+    case esquerda
+    case direita
 }
 
-protocol VehicleProperties {
-    var weight: Int { get }
-    var name: String { get set }
+protocol PropriedadesVeiculo {
+    var peso: Int { get }
+    var nome: String { get set }
 }
 
-protocol Vehicle: VehicleProperties {
-    func accelerate()
-    func stop()
-    func turn(_ direction: Direction)
-    func vehicleDescription() -> String
+protocol Veiculo: PropriedadesVeiculo {
+    func acelerar()
+    func parar()
+    func virar(_ direcao: Direcao)
+    func descricaoDoVeiculo() -> String
 }
 ```
 
-Veja que separamos as propriedades em um outro protocolo chamado `VehicleProperties`. Caso o nosso tipo (*Car*) conforme ao protocolo `Vehicle`, ele precisará adicionar as propriedades também, pois `Vehicle` herda de `VehicleProperties`.
+Veja que separamos as propriedades em um outro protocolo chamado `PropriedadesVeiculo`. Caso o nosso tipo (Carro) conforme ao protocolo `Veiculo`, ele precisará adicionar as propriedades também, pois `Veiculo` herda de `PropriedadesVeiculo`.
 
 Uma classe pode apenas herdar de uma única classe. Lembra disso? Com protocolos isso não acontece! Uma classe, structure enumeration e até mesmo extensions pode conformar vários protocolos ao mesmo tempo.
