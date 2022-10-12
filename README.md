@@ -27,6 +27,9 @@
 10. [Dicionários](docs/linguagem/10-dicionarios.md)
 11. [Closures](docs/linguagem/11-closures.md)
 12. [Iterando sobre coleções com closures](docs/linguagem/12-iterando-colecoes.md)
+13. [Structures](docs/linguagem/13-structures.md)
+14. [Classes](docs/linguagem/14-classes.md)
+15. [Struct x Class](docs/linguagem/15-struct-vs-class.md)
 
 ## Como Contribuir
 
