@@ -3,41 +3,41 @@
 ## Tipos
 Toda variável precisa ter um tipo. Tipos são o que definem o que aquele valor se refere. Por exemplo, um número inteiro será representado como `Int`, enquanto um decimal será `Double`. Um texto será uma `String` e um valor booleano será `Bool`.
 ```swift
-var name: String = "Giovanna"
-var number: Int = 8
-var decimalNumber: Double = 8.5
-var isAdult: Bool = true
+var nome: String = "Giovanna"
+var numero: Int = 8
+var numeroDecimal: Double = 8.5
+var adulto: Bool = true
 ```
 
 Se declararmos uma variável e inicializarmos mas sem colocar explicitamente o seu tipo, o Swift saberá qual o tipo da variável por uma funcionalidade chamada de **"type inference"**, ou seja, inferência de tipo.
 
 ```swift
-var name = "Giovanna" // Swift sabe que isso é uma String
-var number = 8
-var decimalNumber = 8.5
-var isAdult = true
+var nome = "Giovanna" // Swift sabe que isso é uma String
+var numero = 8
+var numeroDecimal = 8.5
+var adulto = true
 ```
 
 ### Entendendo melhor sobre Strings
 
 Strings são um conjunto de caracteres. No Swift, possuímos ambos os tipos: `Character` e `String`.
 ```swift
-    let characterA: Character = "a" // se não especificar que é um character, o Swift entenderá que é uma string
-    let name: String = "Giovanna"
+    let caractereA: Character = "a" // se não especificar que é um character, o Swift entenderá que é uma string
+    let nome: String = "Giovanna"
 ```
 
 Para concatenar duas ou mais strings, podemos fazer de duas maneiras:
 
 ```swift
-let name = "Giovanna"
-var message = "Hello, my name is " + name + "!"
+let nome = "Giovanna"
+var mensagem = "Meu nome é " + nome + "!"
 ```
 
 Ou, de um modo mais fácil:
 
 ```swift
-let name = "Giovanna"
-var message = "Hello, my name is \(name)!"
+let nome = "Giovanna"
+var mensagem = "Meu nome é \(nome)!"
 ```
 
 No Swift, o uso de strings precisa ser feito através de aspas duplas. Aspas simples não são válidas.
@@ -47,7 +47,7 @@ No Swift, o uso de strings precisa ser feito através de aspas duplas. Aspas sim
 
 ```swift
 typealias Animal = String
-let myPet: Animal = "Meu cachorro"
+let meuPet: Animal = "Meu cachorro"
 ```
 
 ## Operações
@@ -57,11 +57,11 @@ Quando você pega um ou mais dados e os transforma em outro, isso é conhecido c
 São operações conhecidas como soma (+), subtração (-), multiplicação (*), divisão (/) e módulo (%, representa o resto de uma divisão).
 
 ```swift
-let sum = 2 + 6
-let sub = 10 - 2
-let multi = 2 * 4
-let div = 24 / 3
-let module = 4 % 2
+let soma = 2 + 6
+let subtracao = 10 - 2
+let multiplicacao = 2 * 4
+let divisao = 24 / 3
+let modulo = 4 % 2
 ```
 
 Se você realizar uma divisão entre dois números inteiros, o resultado será um inteiro.
@@ -83,11 +83,11 @@ A ordem segue a mesma ordem da matemática: os parênteses possuem uma maior pre
 Esses operadores são semelhantes ao operador de atribuição (=), exceto que também executam uma operação artimética. Eles pegam o valor atual da variável, realizam uma operação em cima do valor dado e atribua o resultado à variável.
 
 ```swift
-var number = 10
-number *= 3 // mesma coisa de number = number * 3
-// number = 30
-number /= 2
-// number = 15
+var numero = 10
+numero *= 3 // mesma coisa de numero = numero * 3
+// numero = 30
+numero /= 2
+// numero = 15
 ```
 
 ### 4. Operadores relacionais
