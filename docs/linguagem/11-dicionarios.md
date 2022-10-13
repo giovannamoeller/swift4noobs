@@ -125,4 +125,4 @@ for (nome, _) in pessoas {
 }
 ```
 
-Ir para a próxima página: [Closures](docs/linguagem/12-closures.md)
+Ir para a próxima página: [Closures](12-closures.md)

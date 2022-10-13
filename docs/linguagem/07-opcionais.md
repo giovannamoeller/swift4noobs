@@ -172,4 +172,4 @@ print(nome ?? "Inexistente")
 
 Se a variável `nome` for `nil`, será printado "inexistente".
 
-Ir para a próxima página: [Arrays](docs/linguagem/08-arrays.md)
+Ir para a próxima página: [Arrays](08-arrays.md)

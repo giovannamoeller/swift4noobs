@@ -96,7 +96,7 @@ print(valores) // [0, 10, 40]
 
 Existem diversos outros métodos que iteram sobre coleções com o uso de `closures`, isso é uma prática muito comum!
 
-Ir para a próxima página: [Structures](docs/linguagem/14-structures.md)
+Ir para a próxima página: [Structures](14-structures.md)
 
 
 

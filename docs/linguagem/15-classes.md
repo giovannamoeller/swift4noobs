@@ -25,4 +25,4 @@ Perceba que agora criamos um inicializador, pois em classes eles são necessári
 
 Da mesma maneira que `struct` possui suas propriedades e métodos, classes também possuem. Mas então, quais as diferenças práticas entre eles? Vamos ver mais sobre isso no próximo material!
 
-Ir para a próxima página: [Struct x Class](docs/linguagem/16-struct-vs-class.md)
+Ir para a próxima página: [Struct x Class](16-struct-vs-class.md)

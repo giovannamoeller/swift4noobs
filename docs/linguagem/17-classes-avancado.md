@@ -277,4 +277,4 @@ class Estudante: Pessoa { // erro! A classe Pessoa não pode ser herdada
 }
 ```
 
-Ir para a próxima página: [Propriedades](docs/linguagem/18-propriedades.md)
+Ir para a próxima página: [Propriedades](18-propriedades.md)

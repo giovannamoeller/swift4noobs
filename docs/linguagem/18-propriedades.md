@@ -190,4 +190,4 @@ O parâmetro `oldValue` em `didSet` é referente ao **valor antigo** da propried
 
 Lembre-se de que os observadores `willSet` e `didSet` não são chamados quando uma propriedade é definida durante a inicialização; eles só são chamados quando você atribui um novo valor a uma instância totalmente inicializada.
 
-Ir para a próxima página: [Extensões](docs/linguagem/19-extensoes.md)
+Ir para a próxima página: [Extensões](19-extensoes.md)

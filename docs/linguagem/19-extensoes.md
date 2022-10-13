@@ -41,4 +41,4 @@ Extensões são muito utilizadas para melhor organização do código e separaç
 Podemos estender `struct`, `class`, `protocol` e `enum`.
 Vamos ver sobre protocolos e enumerations a seguir.
 
-Ir para a próxima página: [Enumerations](docs/linguagem/20-enumeracoes.md)
+Ir para a próxima página: [Enumerations](20-enumeracoes.md)

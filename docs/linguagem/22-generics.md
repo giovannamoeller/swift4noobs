@@ -68,4 +68,4 @@ var string = Informacao<String>(dado: "Hello, World!")
 print(string.retornaDado()) // Hello World, um valor do tipo String
 ```
 
-Ir para a próxima página: [E agora, pra onde ir?](docs/linguagem/23-next-steps.md)
+Ir para a próxima página: [E agora, pra onde ir?](23-next-steps.md)

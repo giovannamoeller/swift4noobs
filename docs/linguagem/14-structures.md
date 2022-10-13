@@ -79,4 +79,4 @@ let pessoa1 = Pessoa(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
 cumprimentar(pessoa1)
 ```
 
-Ir para a próxima página: [Classes](docs/linguagem/15-classes.md)
+Ir para a próxima página: [Classes](15-classes.md)
