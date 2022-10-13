@@ -14,3 +14,4 @@ print("Hello World!")
 ```
  e então, execute o playground. Simples assim!
 
+Ir para a próxima página: [00 - Sintaxe da linguagem Swift](../linguagem/00-sintaxe.md)

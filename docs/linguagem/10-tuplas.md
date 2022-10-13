@@ -62,3 +62,4 @@ let (_, idade) = pessoa
 print(idade)
 ```
 
+Ir para a próxima página: [Dicionários](docs/linguagem/11-dicionarios.md)

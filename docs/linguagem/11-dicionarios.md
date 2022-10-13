@@ -124,3 +124,5 @@ for (nome, _) in pessoas {
     print(nome)
 }
 ```
+
+Ir para a próxima página: [Closures](docs/linguagem/12-closures.md)

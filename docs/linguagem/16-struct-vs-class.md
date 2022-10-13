@@ -127,3 +127,5 @@ Porém, há alguns casos em que o uso de classes é recomendado:
 - Quando você precisar utilizar o conceito de herança, herdar propriedades/métodos de uma outra classe pai;
 - Quando você precisar de interoperabilidade, ou seja, utilizar um código de Objective-C, já que nessa linguagem não existe struct;
 - Quando precisamos controlar a identidade, já que as classes em Swift vêm com uma noção embutida de identidade porque são tipos de referência.
+
+Ir para a próxima página: [Mais funcionalidades sobre classes](docs/linguagem/17-classes-avancado.md)

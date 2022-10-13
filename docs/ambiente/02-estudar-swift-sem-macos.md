@@ -8,3 +8,4 @@ Caso você queira realmente ingressar no desenvolvimento iOS será necessário i
 
 Atualmente, você também consegue construir um aplicativo através de um outro aplicativo fornecido pela Apple chamado de "Swift Playgrounds". Esse aplicativo está disponível para MacOS e iPadOS, sendo possível criar um aplicativo através de um iPad.
 
+Ir para a próxima página: [03 - Conhecendo o Playground](03-conhecendo-playgrounds.md)

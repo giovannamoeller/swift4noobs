@@ -43,3 +43,5 @@ let set: Set<Int> = [1, 2, 3, 4]
 set.insert(5)
 set.remove(3)
 ```
+
+Ir para a próxima página: [Tuplas](docs/linguagem/10-tuplas.md)

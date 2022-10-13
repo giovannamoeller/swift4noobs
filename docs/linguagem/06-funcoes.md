@@ -156,3 +156,5 @@ func printaResultado(_ funcao: tipoFuncao, _ a: Int, _ b: Int) {
 }
 printaResultado(adiciona, 4, 2)
 ```
+
+Ir para a próxima página: [Opcionais](docs/linguagem/07-opcionais.md)

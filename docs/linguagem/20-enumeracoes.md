@@ -231,3 +231,5 @@ case .none: print("A opcional não possui nenhum valor.")
 case .some(let valor): print("O valor da opcional é \(valor)")
 }
 ```
+
+Ir para a próxima página: [Protocolos](docs/linguagem/21-protocolos.md)
