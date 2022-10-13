@@ -143,4 +143,4 @@ let numeroAleatorio = Int.random(in: 1...10)
 
 Nesse caso, vamos gerar um número aleatório entre 1 e 10, incluindo o 10.
 
-Ir para a próxima página: [Funções](docs/linguagem/06-funcoes.md)
+Ir para a próxima página: [Funções](06-funcoes.md)

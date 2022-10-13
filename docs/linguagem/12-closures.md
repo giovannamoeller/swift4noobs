@@ -93,4 +93,4 @@ Closures no Swift são muito utilizadas quando falamos sobre métodos assíncron
 
 Eu sei que closures pode parecer bastante confuso no começo, eu também já tive dificuldade. Se tiver alguma dúvida, pode me chamar em alguma das minhas redes sociais pra gente resolver!
 
-Ir para a próxima página: [Iterando sobre coleções com closures](docs/linguagem/13-iterando-colecoes.md)
+Ir para a próxima página: [Iterando sobre coleções com closures](13-iterando-colecoes.md)

@@ -44,4 +44,4 @@ set.insert(5)
 set.remove(3)
 ```
 
-Ir para a próxima página: [Tuplas](docs/linguagem/10-tuplas.md)
+Ir para a próxima página: [Tuplas](10-tuplas.md)

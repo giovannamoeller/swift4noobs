@@ -86,4 +86,4 @@ Veja que separamos as propriedades em um outro protocolo chamado `PropriedadesVe
 
 Uma classe pode apenas herdar de uma única classe. Lembra disso? Com protocolos isso não acontece! Uma classe, structure enumeration e até mesmo extensions pode conformar vários protocolos ao mesmo tempo.
 
-Ir para a próxima página: [Generics](docs/linguagem/22-generics.md)
+Ir para a próxima página: [Generics](22-generics.md)
