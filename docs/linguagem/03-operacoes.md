@@ -61,3 +61,5 @@ Esses operadores comparam duas condições e também retornam um valor booleano.
 ```
 
 Lembrando que os parênteses aqui também indicam uma maior precedência em relação a operação.
+
+Ir para a próxima página: [Controle de fluxo básico](docs/linguagem/04-controle-fluxo-basico.md)

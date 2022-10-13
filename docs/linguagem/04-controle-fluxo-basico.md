@@ -134,3 +134,5 @@ while count < 10 {
 ```
 
 O que acontece no código acima é que quando count for igual a 5, ele não será printado na tela, porque a palavra `continue` força a próxima iteração do loop.
+
+Ir para a próxima página: [Controle de fluxo avançado](docs/linguagem/05-controle-fluxo-avancado.md)

@@ -14,6 +14,4 @@ print("Hello World!")
 ```
  e então, execute o playground. Simples assim!
 
-| Voltar para página anterior  |   |   |   |   |   |  Ir para a próxima página  |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| [02 - Não tenho um MacOS, consigo estudar Swift?](02-estudar-swift-sem-macos.md)   |   |   |   |   |   |  [00 - Sintaxe](../linguagem/00-sintaxe.md)  |
+Ir para a próxima página: [00 - Sintaxe da linguagem Swift](../linguagem/00-sintaxe.md)

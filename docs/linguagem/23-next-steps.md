@@ -28,5 +28,6 @@ Portanto, a minha indicação é começar estudando UIKit:
   
 Entre outros...
 
-Obrigada por chegar até aqui e bons estudos!
+Você pode me encontrar nas redes sociais como Instagram, Youtube e Linkedin. [Os links você encontra aqui](https://giovannamoeller.com).
 
+Obrigada por chegar até aqui e bons estudos!

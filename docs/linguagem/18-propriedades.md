@@ -189,3 +189,5 @@ O parâmetro `oldValue` em `didSet` é referente ao **valor antigo** da propried
 É legal usar observadores porque você pode pensar em várias lógicas na sua aplicação em relação a isso, como por exemplo pensar em uma forma de implementar o conceito de **estado**, chamar uma função novamente toda vez que uma propriedade é alterada.
 
 Lembre-se de que os observadores `willSet` e `didSet` não são chamados quando uma propriedade é definida durante a inicialização; eles só são chamados quando você atribui um novo valor a uma instância totalmente inicializada.
+
+Ir para a próxima página: [Extensões](docs/linguagem/19-extensoes.md)

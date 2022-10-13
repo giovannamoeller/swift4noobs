@@ -24,3 +24,5 @@ let pessoa1 = Pessoa(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
 Perceba que agora criamos um inicializador, pois em classes eles são necessários.
 
 Da mesma maneira que `struct` possui suas propriedades e métodos, classes também possuem. Mas então, quais as diferenças práticas entre eles? Vamos ver mais sobre isso no próximo material!
+
+Ir para a próxima página: [Struct x Class](docs/linguagem/16-struct-vs-class.md)
