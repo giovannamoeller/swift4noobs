@@ -23,3 +23,14 @@ múltiplas linhas
 A documentação do Swift é ótima, e você pode [acessá-la aqui](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html) para complementar seus estudos.
   
 No momento em que esse 4noobs foi escrito, a linguagem Swift estava na versão 5.7!
+
+Ir para: [1. Variáveis](./01-variaveis.md)
+
+| Ir para: [1. Variáveis](./01-variaveis.md) | Description |
+
+{: style="text-align: right" }
+This text is on the right
+
+| Voltar para página anterior  |   |   |   |   |   |  Ir para a próxima página  |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| [03 - Conhecendo o Playground](../ambiente/03-conhecendo-playgrounds.md)   |   |   |   |   |   |  [01 - Variáveis](01-variaveis.md)  |
