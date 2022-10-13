@@ -25,7 +25,7 @@ var pessoa = Pessoa(nome: "Giovanna", sobrenome: "Moeller", idade: 21)
 pessoa.idade = 22
 ```
 
-### Valores padrões (default)
+### Valor padrão (default)
 
 Podemos oferecer valores chamados de `default` para as propriedades. Nesse caso, elas não precisam ser passadas pelo inicializador, porque já possuem um valor padrão:
 
