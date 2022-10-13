@@ -27,3 +27,5 @@ Eu particularmente prefiro e recomendo o segundo modo, pois quando você baixa d
 Obs: no momento em que esse Swift4Noobs foi escrito, o XCode estava em sua versão 14.
 
 <img src="https://developer.apple.com/xcode/images/screen-hero-14-large_2x.png" alt="XCode" width="720">
+
+Ir para a próxima página: [02 - Não tenho um MacOS, consigo aprender Swift?](02-estudar-swift-sem-macos.md)
