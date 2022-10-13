@@ -50,3 +50,8 @@ typealias Animal = String
 let meuPet: Animal = "Meu cachorro"
 ```
 
+Esses tipos que você viu acima, como `Int`, `Float`, `Double`, `Bool`, `String`, são chamados de tipos básicos de uma linguagem.
+
+Em breve, você verá sobre os tipos que representam uma coleção de dados, que é o caso do *Array*, *Set*, *Tuplas* e *Dicionários*. Eu não abordei esses tipos no momento porque acredito que faz mais sentido vermos eles mais pra frente, quando já aprendemos sobre funções e controle de fluxo.
+
+Você verá também como criar o seu próprio tipo com o uso de classes, utilizando o princípio da orientação a objetos.
