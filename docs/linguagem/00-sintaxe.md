@@ -24,4 +24,4 @@ A documentação do Swift é ótima, e você pode [acessá-la aqui](https://docs
   
 No momento em que esse 4noobs foi escrito, a linguagem Swift estava na versão 5.7!
 
-Ir para a próxima página: [01 - Variáveis](../linguagem/01-variaveis.md)
+Ir para a próxima página: [01 - Variáveis](01-variaveis.md)

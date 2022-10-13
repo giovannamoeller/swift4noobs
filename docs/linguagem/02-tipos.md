@@ -56,4 +56,4 @@ Em breve, você verá sobre os tipos que representam uma coleção de dados, que
 
 Você verá também como criar o seu próprio tipo com o uso de classes, utilizando o princípio da orientação a objetos.
 
-Ir para a próxima página: [03 - Operações](03-operacoes.md)
+Ir para a próxima página: [03 - Operações](../linguagem/03-operacoes.md)
