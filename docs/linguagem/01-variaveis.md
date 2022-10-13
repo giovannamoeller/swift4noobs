@@ -43,5 +43,3 @@ Um bom nome descreve especificamente o papel daquilo que está sendo criado, exe
 A chave é garantir que você e outra pessoa irão entender o código em um futuro.
 
 
-
-
