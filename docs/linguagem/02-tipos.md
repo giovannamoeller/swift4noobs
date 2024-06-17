@@ -22,8 +22,8 @@ var adulto = true
 
 Strings são um conjunto de caracteres. No Swift, possuímos ambos os tipos: `Character` e `String`.
 ```swift
-    let caractereA: Character = "a" // se não especificar que é um character, o Swift entenderá que é uma string
-    let nome: String = "Giovanna"
+let caractereA: Character = "a" // se não especificar que é um character, o Swift entenderá que é uma string
+let nome: String = "Giovanna"
 ```
 
 Para concatenar duas ou mais strings, podemos fazer de duas maneiras:
