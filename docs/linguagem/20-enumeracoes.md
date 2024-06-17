@@ -9,10 +9,10 @@ A sua função pode ser escrita dessa maneira:
 ```swift
 func checaSemaforo(estado: String) {
     switch estado {
-    case "verde": print("Pode seguir!")
-    case "vermelho": print("Fique parado!")
-    case "amarelo": print("Atenção!")
-    default: break
+        case "verde": print("Pode seguir!")
+        case "vermelho": print("Fique parado!")
+        case "amarelo": print("Atenção!")
+        default: break
     }
 }
 
@@ -42,10 +42,10 @@ Agora, não temos mais como errar na hora da escrita, pois temos casos únicos e
 ```swift 
 func checaSemaforo(estado: Semaforo) {
     switch estado {
-    case .verde: print("Pode seguir!")
-    case .vermelho: print("Fique parado!")
-    case .amarelo: print("Atenção!")
-    default: break
+        case .verde: print("Pode seguir!")
+        case .vermelho: print("Fique parado!")
+        case .amarelo: print("Atenção!")
+        default: break
     }
 }
 
@@ -191,8 +191,8 @@ func saque(valor: Int) -> ResultadoSaque {
 var saldo = 100
 let resultado = saque(valor: 110)
 switch resultado {
-case .sucesso(let novoValor): print("Seu novo saldo é de \(novoValor)")
-case .erro(let mensagem): print(mensagem)
+    case .sucesso(let novoValor): print("Seu novo saldo é de \(novoValor)")
+    case .erro(let mensagem): print(mensagem)
 }
 ```
 
@@ -227,8 +227,8 @@ var nome: String?
 nome = "Giovanna"
 
 switch nome {
-case .none: print("A opcional não possui nenhum valor.")
-case .some(let valor): print("O valor da opcional é \(valor)")
+    case .none: print("A opcional não possui nenhum valor.")
+    case .some(let valor): print("O valor da opcional é \(valor)")
 }
 ```
 
