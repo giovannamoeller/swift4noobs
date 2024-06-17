@@ -34,7 +34,7 @@ class Carro: Veiculo {
 }
 ```
 
-Veja só: nossa classe `Car` está em conformidade com o protocolo `Veiculo`. Caso a gente especifique que precisa estar em conformidade mas não implementa os métodos necessários, causará um erro na nossa aplicação: "Type 'Car' does not conform to protocol 'Veiculo'".
+Veja só: nossa classe `Carro` está em conformidade com o protocolo `Veiculo`. Caso a gente especifique que precisa estar em conformidade mas não implementa os métodos necessários, causará um erro na nossa aplicação: "Type 'Carro' does not conform to protocol 'Veiculo'".
 
 Um protocolo pode ser adotado por uma classe, structure, enumeration ou até mesmo uma extension.
 
