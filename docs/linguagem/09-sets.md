@@ -1,6 +1,6 @@
 # Sets
 
-Sets são muito parecidos com arrays, também são coleç˜oes de dados em formato de lista, representados com o uso de colchetes [] e com dados do mesmo tipo.
+Sets são muito parecidos com arrays, também são coleções de dados em formato de lista, representados com o uso de colchetes [] e com dados do mesmo tipo.
 
 Porém, as diferenças entre arrays e sets são:
 - Enquanto é permitido a repetição de um mesmo valor no array (ele pode aparecer múltiplas vezes), nos sets isso não acontece: um valor aparece uma única vez. 
