@@ -10,7 +10,7 @@ Vamos ver alguns métodos abaixo. Todos utilizam o conceito de `closure`, passan
 
 ## 1. ForEach
 
-O método `forEach` realiza um loop entre os elementos de uma coleção e perfrorma alguma operação entre eles:
+O método `forEach` realiza um loop entre os elementos de uma coleção e performa alguma operação entre eles:
 
 ```swift
 let valores = [1, 4, 8, 10, 15, 16]

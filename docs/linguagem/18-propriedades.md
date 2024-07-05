@@ -121,7 +121,7 @@ Lembrando que `get` e `set` são aplicados somente em propriedades computadas.
 
 ## Propriedades estáticas
 
-Propriedades estáticas são propriedades que pertencem a clsse/struct, e não a sua instância. Elas são definidas pela palavra-chave `static`.
+Propriedades estáticas são propriedades que pertencem a classe/struct, e não a sua instância. Elas são definidas pela palavra-chave `static`.
 
 Veja um exemplo:
 
